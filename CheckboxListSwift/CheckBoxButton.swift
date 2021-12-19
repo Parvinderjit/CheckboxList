@@ -14,14 +14,15 @@ class CheckBoxButton: UIButton {
 
     let nameLabel = UILabel()
     let checkBox = UIImageView()
-    var checkedImage = UIImage(named: "CheckedBox")
-    var uncheckedImage = UIImage(named: "UncheckedBox")
+    var checkedImage = UIImage(named: "CheckedBox", in:  Bundle(for: CheckBoxButton.self), compatibleWith:  nil)
+    var uncheckedImage = UIImage(named: "UncheckedBox", in:  Bundle(for: CheckBoxButton.self), compatibleWith:  nil)
     var isOn = false
     var setupDone = false
     let fontSize : CGFloat = 18
     let smallMargin : CGFloat = 8
     var buttonColor = UIColor()
     var buttonFont = UIFont()
+
     
     /**
     This will set up the box and set its name
@@ -58,7 +59,7 @@ class CheckBoxButton: UIButton {
     
     - parameter sender: always self
     */
-    func toggle(_ sender: AnyObject){
+    @objc func toggle(_ sender: AnyObject){
         if isOn == true{
             turnOff()
         }

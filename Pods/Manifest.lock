@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: ca75e545f16050f938c5474dfb5a428fa6c613f7
+PODS:
+  - CheckboxList (1.0.1)
 
-COCOAPODS: 1.0.1
+DEPENDENCIES:
+  - CheckboxList (from `./`)
+
+EXTERNAL SOURCES:
+  CheckboxList:
+    :path: "./"
+
+SPEC CHECKSUMS:
+  CheckboxList: 50bf20cc29a85d535a606e7afc2d8b410ed90fc3
+
+PODFILE CHECKSUM: fe1a6dfbcab87f3cfdbdaf471073be0d47046e96
+
+COCOAPODS: 1.10.1
